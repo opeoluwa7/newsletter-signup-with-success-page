@@ -1,0 +1,180 @@
+@import url("../global.css");
+
+:root {
+    --tomato: hsl(17, 100%, 59%);
+    --pink: hsl(327, 100%, 55%);
+    background-color: var(--dark-slate-grey);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.success-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.success-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.success-button {
+    background-color: var(--dark-slate-grey);
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: grab;
+    color: white;
+    
+}
+
+#success-button:hover {
+    background-image: linear-gradient(to left, var(--tomato), var(--pink));
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#success-button:focus,
+#button:active {
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 576px) {
+    :root {
+        --h3: 2.5em;
+        --h4: 0.95em;
+    }
+
+    body {
+        display: block;
+    }
+
+    .success-card {
+        justify-content: space-between;
+        align-items: start;
+        height: 100vh;
+        max-height: 100vh;
+        padding: 0px 10px 0px 20px;
+    }
+
+    #success-icon {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 150px;
+    }
+
+    .success-card-text {
+        gap: 20px;
+        position: relative;
+        bottom: 70px;
+
+    }
+
+    .success-button {
+        width: 95%;
+        font-size: 0.9em;
+        position: relative;
+        bottom: 50px;
+    }
+
+    h3 {
+        font-size: var(--h3);
+        line-height: 40px;
+    }
+
+    h4 {
+        font-size: var(--h4);
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    :root {
+        --h3: 2.5em;
+        --h4: 0.85em;
+    }
+
+    .success-card {
+        justify-content: space-between;
+        align-items: start;
+        max-width: 45%;
+        padding: 30px;
+        gap: 30px;
+        border-radius: 20px;
+    }
+
+    #success-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .success-card-text {
+        gap: 20px;
+
+    }
+
+    .success-button {
+        width: 95%;
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: var(--h3);
+        line-height: 40px;
+    }
+
+    h4 {
+        font-size: var(--h4);
+    }
+
+}
+
+
+@media screen and (min-width: 1025px) {
+    :root {
+        --h3: 2.5em;
+        --h4: 0.9em;
+    }
+
+    .success-card {
+        justify-content: space-between;
+        align-items: start;
+        max-width: 30%;
+        padding: 30px;
+        gap: 30px;
+        border-radius: 20px;
+    }
+
+    #success-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .success-card-text {
+        gap: 20px;
+
+    }
+
+    .success-button {
+        width: 95%;
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: var(--h3);
+        line-height: 40px;
+    }
+
+    h4 {
+        font-size: var(--h4);
+    }
+
+}

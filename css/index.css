@@ -1,0 +1,356 @@
+@import url("../global.css");
+
+:root {
+    --tomato: hsl(17, 100%, 59%);
+    --pink: hsl(327, 100%, 55%);
+    background-color: var(--dark-slate-grey);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+}
+.card{
+    border-radius: 20px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-image {
+    display: none;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checks {
+    display: flex;
+    flex-direction: column;
+}
+
+.checks span {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-labels span,
+#error-message {
+    display: none;
+    color: red;
+}
+
+#email {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+    cursor: grab;
+}
+
+#email:focus,
+#email:active {
+    outline: none;
+    border-color: black;
+}
+
+#button {
+    background-color: var(--dark-slate-grey);
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: grab;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#button:hover {
+    background-image: linear-gradient(to left, var(--tomato), var(--pink));
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 576px) {
+    :root {
+        --h1: 2.8em;
+        --h2: 1em;
+        --p: 0.95em;
+        --email-label: 0.7em;
+        --email-span: 0.7em;
+    }
+
+    body {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+        height: 100vh;
+        max-height: 100vh;
+        height: 100%;
+        max-height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .card-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #desktop-image {
+        display: none;
+    }
+
+    #mobile-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .card-body {
+        max-width: 90%;
+        gap: 40px;
+        margin: 0 auto;
+    }
+
+    #list-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .email-labels label {
+        font-size: var(--email-label);
+    }
+
+    .email-labels span,
+    #error-message {
+        font-size: var(--email-span);
+        position: relative;
+        right: 20px;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #button {
+        font-size: 0.9em;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: var(--h1);
+
+    }
+
+    h2 {
+        font-size: var(--h2);
+
+    }
+
+    p {
+        font-size: var(--p);
+
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    :root {
+        --h1: 2.2em;
+        --h2: 0.8em;
+        --p: 0.85em;
+        --email-label: 0.7em;
+        --email-span: 0.7em;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        max-width: 85%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+
+    .card-image {
+        max-width: 50%;
+        max-height: 100%;
+        padding: 15px 0px 15px 15px;
+    }
+
+    #desktop-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body {
+        max-width: 40%;
+        max-height: 100%;
+        gap: 35px;
+        padding: 30px 50px 30px 0px;
+    }
+
+    #list-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .email-labels label {
+        font-size: var(--email-label);
+    }
+
+    .email-labels span,
+    #error-message {
+        font-size: var(--email-span);
+    }
+
+    #email {
+        width: 100%;
+        height: 45px;
+    }
+
+    #button {
+        font-size: 0.8em;
+        width: 100%;
+        height: 45px;
+    }
+
+    h1 {
+        font-size: var(--h1);
+
+    }
+
+    h2 {
+        font-size: var(--h2);
+
+    }
+
+    p {
+        font-size: var(--p);
+
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    :root {
+        --h1: 2.2em;
+        --h2: 0.8em;
+        --p: 0.85em;
+        --email-label: 0.7em;
+        --email-span: 0.7em;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+
+    .card-image {
+        max-width: 50%;
+        max-height: 100%;
+        padding: 15px 15px 15px 0px;
+    }
+
+    #desktop-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body {
+        max-width: 40%;
+        max-height: 100%;
+        gap: 35px;
+        position: relative;
+        left: 30px;
+    }
+
+    #list-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .email-labels label {
+        font-size: var(--email-label);
+    }
+
+    .email-labels span,
+    #error-message {
+        font-size: var(--email-span);
+    }
+
+    #email {
+        width: 100%;
+        height: 45px;
+    }
+
+    #button {
+        font-size: 0.8em;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: var(--h1);
+
+    }
+
+    h2 {
+        font-size: var(--h2);
+
+    }
+
+    p {
+        font-size: var(--p);
+
+    }
+}
