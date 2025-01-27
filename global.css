@@ -3,7 +3,7 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
-    
+
 }
 
 *,
@@ -50,18 +50,19 @@ h2 {
     font-weight: lighter;
 }
 
-h3{
+h3 {
     color: var(--dark-slate-grey);
     font-family: 'Roboto bold';
     font-weight: 300;
 }
 
-h4{
+h4 {
     color: var(--dark-slate-grey);
     font-weight: 900;
     font-weight: lighter;
 }
-h4 span{
+
+h4 span {
     color: var(--dark-slate-grey);
     font-family: 'Roboto bold';
     font-weight: 300;
@@ -72,13 +73,22 @@ p {
     font-weight: 900;
     font-weight: lighter;
 }
-.email-labels label{
+
+.checks span {
+    color: var(--dark-slate-grey);
+    font-weight: 900;
+    font-weight: lighter;
+}
+
+.email-labels label {
     color: var(--dark-slate-grey);
     font-family: 'Roboto bold';
 }
-.email-labels span{
+
+.email-labels span {
     font-family: 'Roboto bold';
 }
-#button{
+
+#button {
     font-family: 'Roboto bold';
 }

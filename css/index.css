@@ -191,6 +191,9 @@ body {
         font-size: var(--p);
 
     }
+    .checks span{
+        font-size: 0.95em;
+    }
 }
 
 
@@ -272,6 +275,9 @@ body {
         font-size: var(--p);
 
     }
+    .checks span{
+        font-size: 0.85em;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -352,5 +358,8 @@ body {
     p {
         font-size: var(--p);
 
+    }
+    .checks span{
+        font-size: 0.85em;
     }
 }
